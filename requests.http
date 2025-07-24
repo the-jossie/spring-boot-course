@@ -3,3 +3,28 @@ GET http://localhost:8080
 
 ###
 GET http://localhost:8080/api/v1/software-engineers
+
+###
+
+POST http://localhost:8080/api/v1/software-engineers
+Content-Type: application/json
+
+{
+  "name": "Alex",
+  "techStack": "kdb, databases, q"
+}
+
+###
+GET http://localhost:8080/api/v1/software-engineers/1
+
+###
+PUT http://localhost:8080/api/v1/software-engineers/1
+Content-Type: application/json
+
+{
+  "name": "Alex U",
+  "techStack": "kbd, databases, q"
+}
+
+###
+DELETE http://localhost:8080/api/v1/software-engineers/1
